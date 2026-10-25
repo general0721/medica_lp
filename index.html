@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>medica｜看護師専門キャリアスクール</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#eef1f6;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;color:#333}
+  main{max-width:480px;margin:0 auto;background:#fff;overflow:hidden}
+  img{display:block;width:100%;height:auto}
+  .sec{position:relative}
+  /* CTA: 画像内のボタンと同じ位置に切り出したボタンを重ね、ぷるっと動かす */
+  .cta-btn{position:absolute;left:3.659%;top:71.88%;width:92.68%;height:15.92%;
+    display:block;border-radius:999px;overflow:hidden;
+    animation:pulse 1.6s ease-in-out infinite;
+    -webkit-tap-highlight-color:transparent}
+  .cta-btn img{width:100%;height:100%}
+  .cta-btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+    background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);
+    transform:skewX(-20deg);animation:shine 2.8s ease-in-out infinite}
+  .cta-btn:active{transform:scale(.97);animation:none}
+  .step-btn{position:absolute;left:44.53%;top:36.01%;width:43.51%;height:8.98%;border-radius:999px;
+    -webkit-tap-highlight-color:transparent}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+  @keyframes shine{0%{left:-60%}55%,100%{left:130%}}
+  @media (prefers-reduced-motion:reduce){.cta-btn,.cta-btn::after{animation:none}}
+  footer{text-align:center;padding:28px 16px 36px;font-size:12px;color:#777;background:#f6f7fa}
+  footer .logo{font-size:22px;letter-spacing:.12em;color:#555;margin-bottom:10px;font-family:"Helvetica Neue",Arial,sans-serif}
+</style>
+</head>
+<body>
+<main>
+  <section class="sec"><img src="img/fv.jpg" alt="看護師資格を活かして、自分らしい働き方へ 看護師専門キャリアスクール medica" width="1012" height="1554"></section>
+
+  <section class="sec">
+    <img src="img/cta.jpg" alt="無料個別相談実施中 必要なのは看護師の国家資格だけ！" width="1066" height="1476">
+    <a class="cta-btn js-line" href="#" aria-label="LINEで無料相談する"><img src="img/cta_btn.jpg" alt=""></a>
+  </section>
+
+  <section class="sec"><img src="img/pain.jpg" alt="こんなお悩みはありませんか？" width="866" height="1816" loading="lazy"></section>
+  <section class="sec"><img src="img/know.jpg" alt="これだけは知ってください。" width="1024" height="1536" loading="lazy"></section>
+
+  <section class="sec">
+    <img src="img/cta.jpg" alt="無料個別相談実施中 必要なのは看護師の国家資格だけ！" width="1066" height="1476" loading="lazy">
+    <a class="cta-btn js-line" href="#" aria-label="LINEで無料相談する"><img src="img/cta_btn.jpg" alt="" loading="lazy"></a>
+  </section>
+
+  <section class="sec"><img src="img/voice.jpg" alt="「わたしにできるかな…」と不安に思っていた方も今では自分らしい働き方を実現されています！" width="1060" height="1484" loading="lazy"></section>
+
+  <section class="sec">
+    <img src="img/step.jpg" alt="無料相談のお申し込み カンタン3ステップ！" width="1087" height="1447" loading="lazy">
+    <a class="step-btn js-line" href="#" aria-label="LINEを友達追加して無料個別相談を受けてみる"></a>
+  </section>
+
+  <section class="sec">
+    <img src="img/cta.jpg" alt="無料個別相談実施中 必要なのは看護師の国家資格だけ！" width="1066" height="1476" loading="lazy">
+    <a class="cta-btn js-line" href="#" aria-label="LINEで無料相談する"><img src="img/cta_btn.jpg" alt="" loading="lazy"></a>
+  </section>
+
+  <section class="sec"><img src="img/owabi.jpg" alt="お詫び medicaの無料相談はご好評をいただいており、予約枠が少なくなっております。お早めにご予約ください。" width="1570" height="1002" loading="lazy"></section>
+
+  <footer>
+    <div class="logo">medica</div>
+    <small>&copy; medica</small>
+  </footer>
+</main>
+<script>
+  // LINEのリンク先（ここを書き換えれば全CTAに反映）
+  var LINE_URL = "https://liff.line.me/2007606984-9oabBd6N/landing?follow=%40748klnvq&lp=3sKDzF&liff_id=2007606984-9oabBd6N";
+  document.querySelectorAll(".js-line").forEach(function(a){ a.href = LINE_URL; });
+</script>
+</body>
+</html>
